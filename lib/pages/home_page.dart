@@ -1,5 +1,3 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
 import 'package:liquid_swipe/liquid_swipe.dart';
 import 'dart:math' as math;
@@ -25,7 +23,7 @@ class _HomePageState extends State<HomePage> {
               _image(
                   'https://playfeel.weebly.com/uploads/1/2/7/2/12725304/coldplay-what-if-cd-single-frontal_orig.jpg'),
               _title('Coldplay'),
-              _control(), 
+              _control(),
             ]),
       ),
       Container(
@@ -58,6 +56,10 @@ class _HomePageState extends State<HomePage> {
 
     return SafeArea(
       child: Scaffold(
+        appBar: AppBar(
+          title: const Text("Home"),
+          elevation: 0,
+        ),
         body: LiquidSwipe(
           pages: slides,
           enableLoop: true,

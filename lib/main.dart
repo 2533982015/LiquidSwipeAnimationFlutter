@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:liquid_swipe_animation/pages/home_page.dart';
+import 'package:liquid_swipe_animation/pages/splash_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,11 +15,5 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         brightness: Brightness.dark,
       ),
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text("Home"),
-          elevation: 0,
-        ),
-        body: const HomePage(),
-      ));
+      home: const SplashScreen());
 }
